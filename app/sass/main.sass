@@ -1,0 +1,536 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: "VarelaRound-Regular"
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+//=========================================
+.menu
+	width: 100%
+	min-height: 150px
+	position: relative
+	background: #666666
+
+img
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, p, span
+	margin: 0 auto
+	padding: 0 auto
+	text-decoration: none
+	font-weight: normal
+
+.main-holder
+	overflow: hidden
+	max-width: 1370px
+	margin: 0 auto
+	padding: 0 35px
+	position: relative
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+//====================== header section ======================
+
+.hlt-header
+	width: 100%
+	min-height: 695px
+	position: relative
+	direction: rtl
+	background-repeat: no-repeat
+	background-size: cover
+	.htl-text
+		color: white
+		width: 55%
+		font-family: "VarelaRound-Regular"
+		line-height: 1.15
+		margin: 262px 36px 0
+		.htl-description
+			font-size: 49px
+		.htl-title
+			font-size: 72px
+			padding: 0 75px 0 0
+			font-weight: normal
+
+//================== second section ========================
+
+.htl-second-section
+	width: 100%
+	min-height: 714px
+	position: relative
+	background-repeat: no-repeat
+	background-size: cover
+	.main-holder
+		//min-height: 714px
+		//display: flex
+		//flex-direction: column
+		//justify-content: space-between
+		//align-items: center
+
+.sec-head-text
+	text-align: center
+	margin: 80px 0 80px 0
+	direction: rtl
+	h3
+		font-size: 29px
+		font-family: "VarelaRound-Regular"
+		color: rgb(243, 185, 64)
+		line-height: 1.2
+		margin: 0 0 15px 0
+		font-weight: normal
+	p
+		display: inline-block
+		width: 55%
+		font-size: 21px
+		color: rgb(70, 70, 70)
+		line-height: 1.2
+		font-family: "almoni-dl-aaa-regular"
+	.mobile
+		display: none
+.sec-list
+	position: relative
+	margin: 0 auto
+	max-width: 80%
+	ul
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		padding: 0
+		text-align: center
+		list-style: none
+		//margin: 0 -70px
+		li
+			direction: rtl
+			position: relative
+			//text-align: center
+			//direction: rtl
+			//padding: 0 42px
+			padding: 0
+			//width: 16.6%
+			width: 25%
+			font-size: 24px
+			font-family: "VarelaRound-Regular"
+			color: rgb(70, 70, 70)
+			line-height: 1.2
+		.item-list-img
+			background-image: url(../img/pointer.png)
+			width: 40px
+			height: 53px
+			display: block
+			margin-bottom: 15px
+
+.sec-footer-text
+	text-align: center
+	margin: 170px 50px 20px
+	direction: rtl
+	h3
+		font-size: 32px
+		font-family: "VarelaRound-Regular"
+		color: rgb(243, 185, 64)
+		line-height: 1.2
+
+//============ map section ============================
+
+.htl-map-section
+	position: relative
+	width: 100%
+	min-height: 433px
+	display: flex
+	//justify-content: space-around
+	.g-map-mobile
+		display: none
+	.g-map
+		width: 50%
+		min-height: 433px
+		//background-image: url(../img/map.png)
+		//background-size: cover
+		//background-repeat: no-repeat
+	#map
+		height: 100%
+	.address-block
+		width: 50%
+		min-height: 433px
+		background: #093959
+		position: relative
+		direction: rtl
+		overflow-y: hidden
+	ul
+		min-height: 70px
+		color: #3a6b8b
+		background: #09273b
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		padding: 0
+		text-align: center
+		list-style: none
+		align-items: center
+		direction: rtl
+		li
+			width: 25%
+			display: flex
+			align-items: center
+			height: 70px
+			font-size: 30px
+			font-family: "almoni-dl-aaa-bold"
+			color: rgb(58, 107, 139)
+			font-weight: bold
+			line-height: 1.2
+			&:hover
+				//background: #2e6a91
+				//background: #113352
+				background: #113352
+				transition: all 0.8s ease
+			span
+				margin: 0 auto
+				text-decoration: none
+				cursor: pointer
+				color: #305c79
+
+
+
+		.active
+			background: #093959
+			color: white
+			span
+				color: white
+			a
+				color: white
+	.menu-lisy
+		position: relative
+		.toggle-mnu
+			display: none
+			//display: block
+			text-align: right
+			position: absolute
+			left: 0
+			top: 0
+			width: 46px
+			height: 46px
+			text-align: center
+			line-height: 48px
+			z-index: 99
+			background: #f3b940
+			span
+				color: white
+
+
+
+	.address-item
+		color: white
+
+	.tabs__content
+		display: none
+	.tabs__content.active
+		display: block
+
+	.address-item
+		position: relative
+		width: 60%
+		margin: 40px 40px 0 0
+		line-height: 1.48
+		h3
+			font-family: "almoni-dl-aaa-black"
+			font-size: 30px
+			color: #f3b940
+		p
+			font-family: "almoni-dl-aaa-bold"
+			font-size: 25px
+		.he
+			font-family: "Tahoma-Regular-font"
+	.button-section
+		display: flex
+		.button
+			width: 180px
+			height: 45px
+			background: #f3b940
+			margin: 30px 0 0 20px
+			text-decoration: none
+			color: rgb(9, 57, 89)
+			font-size: 25px
+			font-family: "almoni-dl-aaa-bold"
+			&:hover
+				text-decoration: none
+				color: rgb(9, 57, 89)
+				background: #d8a02c
+				transition: all 0.8s ease
+
+//====================== Menu section ==================================
+
+.htl-menu-section
+	position: relative
+	width: 100%
+	min-height: 555px
+	background-size: cover
+	text-align: center
+	direction: rtl
+	.wrap-section
+		margin: 130px 0 0 0
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+
+	h3
+		font-size: 30px
+		font-family: "VarelaRound-Regular"
+		color: rgb(243, 185, 64)
+		line-height: 1.2
+	.description
+		width: 48%
+		margin: 30px 0 40px
+	p
+		font-size: 20px
+		font-family: "almoni-dl-aaa-regular"
+		color: rgb(70, 70, 70)
+		line-height: 1.2
+	.buttons-menu
+		display: flex
+		justify-content: center
+	.button
+		width: 370px
+		height: 80px
+		background: #f3b940
+		margin: 15px
+		font-size: 30px
+		font-family: "almoni-dl-aaa-black"
+		color: rgb(255, 255, 255)
+		line-height: 1.2
+		&:hover
+			text-decoration: none
+			background: #d29006
+			transition: all 0.8s ease
+	.footer-section
+		font-size: 30px
+		font-family: "VarelaRound-Regular"
+		color: rgb(243, 185, 64)
+		line-height: 1.2
+		margin: 80px 0 20px
+
+//=============================== Slider section ======================
+
+.htl-slider-section
+	position: relative
+	width: 100%
+	min-height: 260px
+	background: #666666
+
+	.variable-width
+		display: flex
+		overflow: hidden
+
+	.item
+		//width: 390px
+		height: 260px
+		img
+			height: 260px
+
+	//======================= slic options ====================================
+
+	.slick-next
+		display: none !important
+		background: #f3b940
+		right: 0
+		z-index: 25
+		width: 40px
+		height: 80px
+		&:before
+			content: ''
+			border-bottom: 3px solid white
+			border-right: 3px solid white
+			width: 15px
+			height: 15px
+			display: inline-block
+			vertical-align: middle
+			transform: rotate(-45deg)
+			position: relative
+	.slick-prev
+		display: none !important
+		background: #f3b940
+		left: 0
+		z-index: 25
+		width: 40px
+		height: 80px
+		&:before
+			content: ''
+			border-bottom: 3px solid white
+			border-left: 3px solid white
+			width: 15px
+			height: 15px
+			display: inline-block
+			vertical-align: middle
+			transform: rotate(45deg)
+			position: relative
+
+	.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus
+		background: #f3b940
+
+
+//============================== Contact form ==========================
+
+.htl-contactform-section
+	position: relative
+	width: 100%
+	min-height: 410px
+	background: white
+	background-image: url(../img/bacground-contactform-section.png)
+	background-position: bottom
+	background-repeat: no-repeat
+	text-align: center
+
+	h3
+		font-size: 30px
+		font-family: "VarelaRound-Regular"
+		color: rgb(243, 185, 64)
+		line-height: 1.2
+		display: inline-block
+		margin: 80px 0 15px
+		direction: rtl
+	p
+		font-size: 20px
+		font-family: "almoni-dl-aaa-regular"
+		color: rgb(70, 70, 70)
+		line-height: 1.2
+		direction: rtl
+
+	.contact-form
+		margin: 40px 0 0 0
+	.form
+		max-width: 1270px
+		margin: 0 auto
+		position: relative
+	.form-row-wrap
+		direction: rtl
+		display: flex
+		//flex-direction: row
+		justify-content: center
+		flex-wrap: wrap
+		margin: 0 -8px
+		//margin: 0 -12px
+		transition: opacity 0.2s ease-in-out
+
+	.form-row
+		width: 24%
+		//padding: 0 8px
+		//padding: 0 12px
+		margin: 0 4px
+		border: 1px solid #b7b7b7
+
+	.form-control
+		background: transparent
+		padding: 10px
+		direction: rtl
+		display: block
+		width: 100%
+		height: 60px
+		color: rgb(167, 169, 172)
+		border: none
+		font-size: 24px
+		font-family: "almoni-dl-aaa-regular"
+		line-height: 1.2
+		text-decoration: none
+		transition: all .2s ease
+		&::placeholder
+			color: #cccccc
+		&:hover
+			//background-color: #fffff5
+			//border-top: 2px solid #b7b7b7
+			text-decoration: none
+			//color: #111
+
+	.btn
+		position: relative
+		background: transparent
+		font-family: "almoni-dl-aaa-black"
+		color: white
+		text-align: center
+		height: 60px
+		border: none
+		outline: none
+		display: block
+		width: 100%
+		line-height: 1.2
+		//width: 250px
+		font-size: 30px
+		text-decoration: none
+	.form-row.button
+		background: #f3b940
+		border: none
+		&:hover
+			text-decoration: none
+			background: #d29006
+			transition: all 0.8s ease
+	.succes-nsg
+		h3
+			font-family: "almoni-dl-aaa-regular"
+			//margin-bottom: 173px
+			span
+				font-family: "almoni-dl-aaa-black"
+	.mob
+		display: none
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
