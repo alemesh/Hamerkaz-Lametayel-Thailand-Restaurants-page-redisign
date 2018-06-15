@@ -57,6 +57,47 @@ body
 	background-color: $accent
 	color: #fff
 
+//=========================================
+.hlt-menu-section
+	.hlt-top-wraper
+		position: relative
+		width: 100%
+		min-height: 50px
+		background: #01013b
+		margin-bottom: -50px
+		z-index: 2
+		.main-holder
+			display: flex
+			justify-content: center
+			align-items: center
+			min-height: 50px
+		a
+			color: white
+			text-decoration: none
+			padding: 0 20px
+		.left-block
+			direction: rtl
+			width: 50%
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			margin: 0 -20px
+		.right-block
+			direction: rtl
+			width: 50%
+			display: flex
+			justify-content: flex-start
+			align-items: center
+		.button
+			background: #fcaf17
+			width: 150px
+			height: 36px
+			border-radius: 25px
+			transition: all .2s ease
+			&:hover
+				background: #dd9300
+
+
 
 //=========================================
 .menu
@@ -77,7 +118,7 @@ h1, h2, h3, h4, p, span
 
 .main-holder
 	overflow: hidden
-	max-width: 1370px
+	max-width: 1260px
 	margin: 0 auto
 	padding: 0 35px
 	position: relative
@@ -85,21 +126,30 @@ h1, h2, h3, h4, p, span
 	display: flex
 	justify-content: center
 	align-items: center
+input
+	outline: none
 //====================== header section ======================
 
 .hlt-header
 	width: 100%
-	min-height: 695px
+	min-height: 832px
 	position: relative
 	direction: rtl
 	background-repeat: no-repeat
 	background-size: cover
+	.main-holder
+		padding: 0 65px
 	.htl-text
-		color: white
-		width: 55%
-		font-family: "VarelaRound-Regular"
-		line-height: 1.15
-		margin: 262px 36px 0
+		//color: white
+		//width: 55%
+		//font-family: "VarelaRound-Regular"
+		//line-height: 1.15
+		//margin: 262px 36px 0
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		margin-top: 310px
+
 		.htl-description
 			font-size: 49px
 		.htl-title
@@ -111,10 +161,11 @@ h1, h2, h3, h4, p, span
 
 .htl-second-section
 	width: 100%
-	min-height: 714px
+	min-height: 709px
 	position: relative
-	background-repeat: no-repeat
 	background-size: cover
+	background-position: left
+	background-repeat: no-repeat
 	.main-holder
 		//min-height: 714px
 		//display: flex
@@ -124,18 +175,30 @@ h1, h2, h3, h4, p, span
 
 .sec-head-text
 	text-align: center
-	margin: 80px 0 80px 0
+	margin: 60px 0 80px 0
 	direction: rtl
 	h3
 		font-size: 29px
 		font-family: "VarelaRound-Regular"
-		color: rgb(243, 185, 64)
+		color: #05a0ab
 		line-height: 1.2
-		margin: 0 0 15px 0
+		margin: 0 0 20px 0
 		font-weight: normal
+		position: relative
+		padding-bottom: 10px
+		&:after
+			content: ''
+			width: 70px
+			color: #05a0ab
+			position: absolute
+			border-bottom: 4px solid #05a0ab
+			bottom: 0
+			left: 50%
+			z-index: 2
+			transform: translateX(-50%)
 	p
 		display: inline-block
-		width: 55%
+		//width: 55%
 		font-size: 21px
 		color: rgb(70, 70, 70)
 		line-height: 1.2
@@ -169,20 +232,33 @@ h1, h2, h3, h4, p, span
 			line-height: 1.2
 		.item-list-img
 			background-image: url(../img/pointer.png)
-			width: 40px
-			height: 53px
+			background-size: cover
+			width: 100px
+			height: 104px
 			display: block
 			margin-bottom: 15px
 
 .sec-footer-text
 	text-align: center
-	margin: 170px 50px 20px
+	margin: 110px 50px 40px
 	direction: rtl
 	h3
 		font-size: 32px
 		font-family: "VarelaRound-Regular"
-		color: rgb(243, 185, 64)
+		color: #05a0ab
 		line-height: 1.2
+		position: relative
+		padding-bottom: 20px
+		&:after
+			content: ''
+			width: 70px
+			color: #05a0ab
+			position: absolute
+			border-bottom: 4px solid #05a0ab
+			bottom: 0
+			left: 50%
+			z-index: 2
+			transform: translateX(-50%)
 
 //============ map section ============================
 
@@ -205,14 +281,14 @@ h1, h2, h3, h4, p, span
 	.address-block
 		width: 50%
 		min-height: 433px
-		background: #093959
+		background: #e56621
 		position: relative
 		direction: rtl
 		overflow-y: hidden
 	ul
 		min-height: 70px
 		color: #3a6b8b
-		background: #09273b
+		background: #db4f27
 		margin: 0 auto
 		display: flex
 		justify-content: center
@@ -235,18 +311,18 @@ h1, h2, h3, h4, p, span
 			&:hover
 				//background: #2e6a91
 				//background: #113352
-				background: #113352
+				background: #c03d18
 				transition: all 0.8s ease
 			span
 				margin: 0 auto
 				text-decoration: none
 				cursor: pointer
-				color: #305c79
+				color: white
 
 
 
 		.active
-			background: #093959
+			background: #e56621
 			color: white
 			span
 				color: white
@@ -288,7 +364,7 @@ h1, h2, h3, h4, p, span
 		h3
 			font-family: "almoni-dl-aaa-black"
 			font-size: 30px
-			color: #f3b940
+			color: white
 		p
 			font-family: "almoni-dl-aaa-bold"
 			font-size: 25px
@@ -299,29 +375,31 @@ h1, h2, h3, h4, p, span
 		.button
 			width: 180px
 			height: 45px
-			background: #f3b940
+			background: white
 			margin: 30px 0 0 20px
 			text-decoration: none
-			color: rgb(9, 57, 89)
+			color: black
 			font-size: 25px
 			font-family: "almoni-dl-aaa-bold"
+			border-radius: 25px
 			&:hover
 				text-decoration: none
-				color: rgb(9, 57, 89)
-				background: #d8a02c
-				transition: all 0.8s ease
+				color: black
+				background: #db4f27
+				transition: all 0.3s ease
 
 //====================== Menu section ==================================
 
 .htl-menu-section
 	position: relative
 	width: 100%
-	min-height: 555px
+	min-height: 478px
 	background-size: cover
+	background-position: center
 	text-align: center
 	direction: rtl
 	.wrap-section
-		margin: 130px 0 0 0
+		margin: 50px 0 0 0
 		display: flex
 		justify-content: center
 		flex-direction: column
@@ -330,15 +408,27 @@ h1, h2, h3, h4, p, span
 	h3
 		font-size: 30px
 		font-family: "VarelaRound-Regular"
-		color: rgb(243, 185, 64)
+		color: #76c6c3
 		line-height: 1.2
+		position: relative
+		padding-bottom: 20px
+		&:after
+			content: ''
+			width: 70px
+			color: #05a0ab
+			position: absolute
+			border-bottom: 4px solid #05a0ab
+			bottom: 0
+			left: 50%
+			z-index: 2
+			transform: translateX(-50%)
 	.description
 		width: 48%
-		margin: 30px 0 40px
+		margin: 50px 0 70px
 	p
 		font-size: 20px
 		font-family: "almoni-dl-aaa-regular"
-		color: rgb(70, 70, 70)
+		color: white
 		line-height: 1.2
 	.buttons-menu
 		display: flex
@@ -346,22 +436,24 @@ h1, h2, h3, h4, p, span
 	.button
 		width: 370px
 		height: 80px
-		background: #f3b940
+		border-radius: 45px
+		background: #05a0ab
 		margin: 15px
 		font-size: 30px
 		font-family: "almoni-dl-aaa-black"
-		color: rgb(255, 255, 255)
+		color: #000000
 		line-height: 1.2
+		transition: all 0.3s ease
 		&:hover
 			text-decoration: none
-			background: #d29006
-			transition: all 0.8s ease
-	.footer-section
-		font-size: 30px
-		font-family: "VarelaRound-Regular"
-		color: rgb(243, 185, 64)
-		line-height: 1.2
-		margin: 80px 0 20px
+			background: #296e6b
+
+	//.footer-section
+	//	font-size: 30px
+	//	font-family: "VarelaRound-Regular"
+	//	color: rgb(243, 185, 64)
+	//	line-height: 1.2
+	//	margin: 80px 0 20px
 
 //=============================== Slider section ======================
 
@@ -369,7 +461,7 @@ h1, h2, h3, h4, p, span
 	position: relative
 	width: 100%
 	min-height: 260px
-	background: #666666
+	background: white
 
 	.variable-width
 		display: flex
@@ -380,6 +472,25 @@ h1, h2, h3, h4, p, span
 		height: 260px
 		img
 			height: 260px
+	.footer-section
+		font-size: 30px
+		font-family: "VarelaRound-Regular"
+		color: #05a0ab
+		line-height: 1.2
+		margin: 40px 0 30px
+		padding-bottom: 20px
+		text-align: center
+		position: relative
+		&:after
+			content: ''
+			width: 70px
+			color: #05a0ab
+			position: absolute
+			border-bottom: 4px solid #05a0ab
+			bottom: 0
+			left: 50%
+			z-index: 2
+			transform: translateX(-50%)
 
 	//======================= slic options ====================================
 
@@ -437,11 +548,23 @@ h1, h2, h3, h4, p, span
 	h3
 		font-size: 30px
 		font-family: "VarelaRound-Regular"
-		color: rgb(243, 185, 64)
+		color: #05a0ab
 		line-height: 1.2
 		display: inline-block
-		margin: 80px 0 15px
+		margin: 80px 0 40px
 		direction: rtl
+		position: relative
+		padding-bottom: 20px
+		&:after
+			content: ''
+			width: 70px
+			color: #05a0ab
+			position: absolute
+			border-bottom: 4px solid #05a0ab
+			bottom: 0
+			left: 50%
+			z-index: 2
+			transform: translateX(-50%)
 	p
 		font-size: 20px
 		font-family: "almoni-dl-aaa-regular"
@@ -471,6 +594,7 @@ h1, h2, h3, h4, p, span
 		//padding: 0 12px
 		margin: 0 4px
 		border: 1px solid #b7b7b7
+		border-radius: 45px
 
 	.form-control
 		background: transparent
@@ -510,12 +634,13 @@ h1, h2, h3, h4, p, span
 		font-size: 30px
 		text-decoration: none
 	.form-row.button
-		background: #f3b940
+		background: #e56621
 		border: none
+		transition: all 0.5s ease
 		&:hover
 			text-decoration: none
-			background: #d29006
-			transition: all 0.8s ease
+			background: #db4f27
+
 	.succes-nsg
 		h3
 			font-family: "almoni-dl-aaa-regular"
@@ -524,7 +649,6 @@ h1, h2, h3, h4, p, span
 				font-family: "almoni-dl-aaa-black"
 	.mob
 		display: none
-
 
 
 
