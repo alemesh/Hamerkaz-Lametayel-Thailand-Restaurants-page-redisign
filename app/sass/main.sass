@@ -208,7 +208,8 @@ input
 .sec-list
 	position: relative
 	margin: 0 auto
-	max-width: 80%
+	//max-width: 80%
+	max-width: 860px
 	ul
 		display: flex
 		justify-content: center
@@ -226,10 +227,10 @@ input
 			padding: 0
 			//width: 16.6%
 			width: 25%
-			font-size: 24px
+			font-size: 22px
 			font-family: "almoni-dl-aaa-bold"
 			color: rgb(70, 70, 70)
-			line-height: 1.2
+			line-height: 1
 		.item-list-img
 			background-image: url(../img/pointer.png)
 			background-size: cover
@@ -303,7 +304,7 @@ input
 			display: flex
 			align-items: center
 			height: 70px
-			font-size: 30px
+			font-size: 27px
 			font-family: "almoni-dl-aaa-black"
 			color: rgb(58, 107, 139)
 			font-weight: bold
@@ -398,6 +399,33 @@ input
 	background-position: center
 	text-align: center
 	direction: rtl
+	.left-image
+		position: absolute
+		width: 213px
+		height: 288px
+		background-image: url(../img/background-fourtch-section3-1.png)
+		background-size: cover
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
+	.right-image
+		position: absolute
+		width: 280px
+		height: 267px
+		background-image: url(../img/background-fourtch-section3-2.png)
+		background-size: cover
+		top: 50%
+		right: 75px
+		transform: translateY(-50%)
+	.right-2-image
+		position: absolute
+		width: 42px
+		height: 87px
+		background-image: url(../img/background-fourtch-section3-3.png)
+		background-size: cover
+		top: 50%
+		right: 31%
+		transform: translateY(-50%)
 	.wrap-section
 		margin: 50px 0 0 0
 		display: flex
@@ -434,13 +462,15 @@ input
 		display: flex
 		justify-content: center
 	.button
-		width: 370px
-		height: 80px
+		//width: 370px
+		width: 250px
+		//height: 80px
+		height: 50px
 		border-radius: 45px
 		//background: #05a0ab
 		background: #76c6c3
 		margin: 15px
-		font-size: 30px
+		font-size: 26px
 		font-family: "almoni-dl-aaa-bold"
 		color: #000000
 		line-height: 1.2
@@ -596,6 +626,9 @@ input
 		margin: 0 4px
 		border: 1px solid #b7b7b7
 		border-radius: 45px
+		display: flex
+		justify-content: center
+		align-items: center
 
 	.form-control
 		background: transparent
@@ -603,7 +636,7 @@ input
 		direction: rtl
 		display: block
 		width: 100%
-		height: 60px
+		height: 50px
 		color: rgb(167, 169, 172)
 		border: none
 		font-size: 24px
@@ -625,7 +658,7 @@ input
 		font-family: "almoni-dl-aaa-bold"
 		color: white
 		text-align: center
-		height: 60px
+		height: 50px
 		border: none
 		outline: none
 		display: block
